@@ -33,18 +33,29 @@
             <div class="contact-wrapper">
                 <form id="contactForm" class="contact-form">
                     <div class="form-group">
-                        <label for="nombre">Nombre Completo</label>
+                        <label for="nombre">Nombre</label>
                         <input type="text" id="nombre" name="nombre" placeholder="Tu nombre..." required>
                     </div>
 
                     <div class="form-group">
-                        <label for="email">Correo Electrónico</label>
+                        <label for="ciudad">Ciudad</label>
+                        <input type="text" id="ciudad" name="ciudad" placeholder="Tu ciudad..." required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email</label>
                         <input type="email" id="email" name="email" placeholder="ejemplo@correo.com" required>
                     </div>
 
                     <div class="form-group">
-                        <label for="mensaje">¿En qué podemos ayudarte?</label>
-                        <textarea id="mensaje" name="mensaje" rows="5" placeholder="Cuéntanos sobre el instrumento que buscas..." required></textarea>
+                        <label for="asunto">Asunto</label>
+                        <input type="text" id="asunto" name="asunto" placeholder="Asunto de contacto..." required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="descripcion">Descripción</label>
+                        <textarea id="descripcion" name="descripcion" rows="5" placeholder="Cuéntanos en detalle..."
+                            required></textarea>
                     </div>
 
                     <button type="submit" class="submit-btn">Enviar Mensaje</button>
