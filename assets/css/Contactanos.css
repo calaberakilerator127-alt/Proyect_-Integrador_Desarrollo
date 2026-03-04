@@ -1,0 +1,113 @@
+.page-header {
+    text-align: center;
+    padding: 60px 20px;
+    background-color: #070f1c;
+    border-bottom: 1px solid rgba(201, 168, 76, 0.2);
+}
+
+.page-header h1 {
+    font-size: 2.8rem;
+    text-transform: uppercase;
+    letter-spacing: 6px;
+    color: #e8c46a; 
+    margin-bottom: 10px;
+}
+
+.page-header p {
+    color: #6a8aad;
+    font-size: 0.95rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 60px 24px;
+}
+
+.contact-wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.contact-form {
+    background: #070f1c;
+    border: 1px solid #7a5f28;
+    padding: 40px;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 600px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.contact-form:hover {
+    transform: scale(1.02); 
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.7); 
+}
+
+.form-group {
+    margin-bottom: 24px;
+}
+
+.form-group label {
+    display: block;
+    color: #c9a84c; 
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 8px;
+    font-weight: 600;
+}
+
+.contact-form input, 
+.contact-form textarea {
+    width: 100%;
+    padding: 12px 16px;
+    background-color: #04090f;
+    border: 1px solid rgba(122, 95, 40, 0.5);
+    border-radius: 6px;
+    color: #dce8f5;
+    font-family: inherit;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+}
+
+.contact-form input:focus, 
+.contact-form textarea:focus {
+    outline: none;
+    border-color: #e8c46a;
+}
+
+.submit-btn {
+    width: 100%;
+    padding: 16px;
+    background-color: #c9a84c;
+    color: #04090f;
+    border: none;
+    border-radius: 4px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.submit-btn:hover {
+    background-color: #e8c46a;
+    transform: translateY(-3px);
+}
+
+.form-message {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 0.95rem;
+    min-height: 1.5rem;
+}
+
+.success-msg { color: #4ade80; }
+
+@media (max-width: 480px) {
+    .page-header h1 { font-size: 1.8rem; }
+    .contact-form { padding: 25px; }
+}
